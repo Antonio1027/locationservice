@@ -1,0 +1,22 @@
+{
+  "name": "geolocation",
+  "version": "1.0.0",
+  "description": "Service to process geolocation data transmited by GPS modules",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/startup_sinnombre/nomadeando_api.git"
+  },
+  "keywords": [
+    "geolocation"
+  ],
+  "author": "Antonio Shilon",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/startup_sinnombre/nomadeando_api#readme",
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  }
+}

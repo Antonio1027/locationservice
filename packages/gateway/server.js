@@ -2,23 +2,8 @@ const server = require('express')();
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 const bodyParser = require('body-parser');
 const { makeExecutableSchema } = require('graphql-tools');
-
 const { port } = require('./config');
-
-const typeDefs = `
-    type Query { hey: String! }
-`;
-
-const resolvers = {
-    Query: {
-        hey: () => 'hey there'
-    }
-};
-
-const schema = makeExecutableSchema({
-    typeDefs,
-    resolvers
-});
+const schema = require('./data/schema');
 
 server
     .use(bodyParser.json())
